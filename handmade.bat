@@ -1,12 +1,12 @@
 @echo off
 
-if "%1" == "msvc" goto :msvc
+if "%1" == "build" goto :msvc
 if "%1" == "run" goto :run
 if "%1" == "clean" goto :clean
 if "%1" == "vs" goto :vs
 
 echo Commands:
-echo   handmade msvc    - build with MSVC
+echo   handmade build    - build with MSVC
 echo   handmade run     - build + run
 echo   handmade clean   - delete build
 echo   handmade vs      - open Visual Studio project
@@ -26,5 +26,5 @@ del /q build\*.exe *.pdb
 exit /b
 
 :vs
-call devenv .\build\win32_handmade_msvc.exe
+call devenv .\build\win32_handmade_msvc.exe ^ code\win32_handmade.cpp
 exit /b
