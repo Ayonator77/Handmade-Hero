@@ -15,7 +15,7 @@ exit /b
 :msvc
 call build_msvc.bat
 exit /b
-
+  
 :run
 call build_msvc.bat
 build\win32_handmade_msvc.exe

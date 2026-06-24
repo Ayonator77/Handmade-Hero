@@ -2,14 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug Handmade Hero MSVC",
+            "name": "Debug Handmade Hero",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/win32_handmade_msvc.exe",
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "console": "integratedTerminal",
-            "preLaunchTask": "Build MSVC"
+            "preLaunchTask": "CMake: build debug"
         }
     ]
 }
